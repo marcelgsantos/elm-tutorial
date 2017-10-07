@@ -1,11 +1,11 @@
 # Summary
 
-* [Introduction](README.md)
-* [Foundations](01-foundations/cover.md)
-   * [Hello World](01-foundations/01-hello.md)
-   * [Functions](01-foundations/02-functions.md)
-   * [More on functions](01-foundations/03-functions-2.md)
-   * [Imports and modules](01-foundations/04-imports-and-modules.md)
+* [Introdução](README.md)
+* [Fundamentos](01-foundations/cover.md)
+   * [Olá Mundo](01-foundations/01-hello.md)
+   * [Funções](01-foundations/02-functions.md)
+   * [Mais sobre funções](01-foundations/03-functions-2.md)
+   * [Imports and módulos](01-foundations/04-imports-and-modules.md)
    * [Union types](01-foundations/05-union-types.md)
    * [Type aliases](01-foundations/06-type-aliases.md)
    * [The unit type](01-foundations/07-unit-type.md)
