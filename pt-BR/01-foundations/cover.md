@@ -1,6 +1,6 @@
 # Foundations
 
-This chapter covers:
+Este capítulo aborda:
 
-- Running a basic Elm application
-- Basic of functions and types in Elm
+- Rodar uma aplicação Elm básica
+- Básico sobre funções e tipos em Elm

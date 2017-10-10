@@ -1,22 +1,22 @@
-# Hello World
+# Olá Mundo
 
-## Installing Elm
+## Instalando o Elm
 
-Go to http://elm-lang.org/install and download the appropriate installer for your system.
+Acesse http://elm-lang.org/install e baixe o instalador apropriado para o seu sistema.
 
-## Our first Elm application
+## Nossa primeira aplicação Elm
 
-Let's write our first Elm application. Create a folder for your application. In this folder run the following command in the terminal:
+Vamos escrever nossa primeira aplicação Elm. Crie uma pasta para sua aplicação. Nesta pasta, execute o seguinte comando no terminal:
 
 ```bash
 elm-package install elm-lang/html
 ```
 
-This will inform you that additional packages are needed, show you the proposed upgrade plan, and ask you to confirm the upgrade plan.  If you are running elm 0.18.0, the upgrade plan will include elm-lang/core, elm-lang/html, and elm-lang/virtual-dom packages.
+Isso informará que pacotes adicionais são necessários, mostra o plano de atualização proposta e pede para que você confirme o plano de atualização. Se você estiver rodando o Elm 0.18.0, o plano de atualização incluirá os pacotes elm-lang/core, elm-lang/html e elm-lang/virtual-dom.
 
-This will create an _elm-package.json_ file and _elm-stuff_ directory in the same project directory, and then install the specified modules. Your modules themselves are saved in the _elm-stuff_ directory, while their specifications are saved in the _elm-package.json_ file.
+Isso criará um arquivo _elm-package.json_ e um diretório _elm-stuff_ no mesmo diretório do projeto e então instalará os módulos especificados. Os módulos serão salvos no diretório _elm-stuff_ directory, enquanto suas especificações serão salvas no arquivo _elm-package.json_.
 
-Add a `Hello.elm` file, with the following code:
+Adicione um arquivo `Hello.elm` com o seguinte código:
 
 ```elm
 module Hello exposing (..)
@@ -28,34 +28,34 @@ main =
     text "Hello"
 ```
 
-Go to this folder on the terminal and type:
+Vá para a pasta no terminal e digite:
 
 ```bash
 elm reactor
 ```
 
-This should show you:
+Isso deve mostrar para você:
 
 ```
 elm reactor 0.18.0
 Listening on http://0.0.0.0:8000/
 ```
 
-Open `http://0.0.0.0:8000/` on a browser. And click on `Hello.elm`. You should see `Hello` on your browser.
+Abra `http://0.0.0.0:8000/` em um navegador e clique em `Hello.elm`. Você deve ver `Hello` no seu navegador.
 
-Note to you might see a warning about a missing type annotation for `main`. Ignore this for now, we will get to type annotations later.
+Note que você poderá ver um aviso sobre uma anotação de tipo faltando para `main`. Ignore isso por enquanto, vamos começar anotações de tipos mais tarde.
 
-Let's review what is happening here:
+Vamos revisar o que está acontecendo  aqui:
 
-### Module declaration
+### Declaração de módulo
 
 ```
 module Hello exposing (..)
 ```
 
-Every module in Elm must start with a module declaration, in this case the module name is called `Hello`. It is a convention to name the file and the module the same e.g. `Hello.elm` contains `module Hello`.
+Todo módulo em Elm deve começar com uma declaração de módulo, neste caso o nome do módulo é chamado de `Hello`. É uma convenção nomear o arquivo e o módulo da mesma forma, por exemplo, `Hello.elm` contem `module Hello`.
 
-The `exposing (..)` part of the declaration specifies what function and types this module exposes to the other modules importing this. In this case we expose everything `(..)`.
+A parte da declaração `exposing (..)` especifica quais funções e tipos este módulo expõe para os outros módulos que o importam. Neste caso nós expomos tudo `(..)`.
 
 ### Imports
 
@@ -63,9 +63,9 @@ The `exposing (..)` part of the declaration specifies what function and types th
 import Html exposing (text)
 ```
 
-In Elm you need to import the __modules__  you want to use explicitly. In this case we want to use the __Html__ module. 
+Em Elm você precisa importar os __módulos__  que você deseja utilizar explicitamente. Neste caso nós queremos utilizar o módulo __Html__. 
 
-This module has many functions to work with html. We will be using `.text` so we import this function into the current namespace by using `exposing`.
+Este módulo possui muitas funções para trabalar com HTML. Vamos usar `.text` para importar essa função para o namespace atual utilizando `exposing`.
 
 ### Main
 
@@ -74,8 +74,8 @@ main =
     text "Hello"
 ```
 
-Front end applications in Elm start on a function called `main`. `main` is a function that returns an element to draw into the page. In this case it returns an Html element (created by using `text`).
+As aplicações fron-end em Elm começam em uma função chamada `main`. `main` é uma função que retorna um elemento para desenhar na página. Neste caso ele retorna um elemento HTML (criado utilizando `text`).
 
 ### Elm reactor
 
-Elm __reactor__ creates a server that compiles Elm code on the fly. __reactor__ is useful for developing applications without worrying too much about setting up a build process. However __reactor__ has limitations, so we will need to switch to a build process later on.
+O Elm __reactor__ cria um servidor que compila código Elm on the fly. __reactor__ é útil para desenvolver aplicações sem se preocupar miuto com a criação de um processo de build. No entanto o __reactor__ possui limitações, então será necesário trocar para um processo de build mais tarde.
